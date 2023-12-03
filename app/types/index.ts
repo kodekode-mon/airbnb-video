@@ -2,7 +2,7 @@ import { User } from "@prisma/client";
 
 export type SafeUser = Omit<
     User,
-    "createAt" | "updatedAt" | "emailVerified"
+    "createdAt" | "updatedAt" | "emailVerified"
 > & {
     createdAt: string;
     updatedAt: string;
