@@ -105,9 +105,9 @@ const SearchModal = () => {
         return 'Next'
     }, [step]);
 
-    const secondaryActionLabel = useMemo(() => {
+    const secondaryActionLabel: 'Back' | null = useMemo(() => {
         if (step === STEPS.LOCATION) {
-            return undefined;
+            return null;
         }
 
         return 'Back';
