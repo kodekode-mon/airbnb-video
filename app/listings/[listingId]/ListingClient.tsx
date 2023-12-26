@@ -13,6 +13,7 @@ import { categories } from "@/app/components/navbar/Categories";
 import useLoginModal from "@/app/hooks/useLoginModal";
 import { SafeListing, SafeReservation, SafeUser } from "@/app/types";
 import ListingReservation from "@/app/components/listings/ListingReservation";
+import { IconType } from "react-icons";
 
 
 
@@ -109,6 +110,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
         item.label === listing.category);
     }, [listing.category]);
 
+    
     return (
         <Container>
             <div className="max-w-screen-lg mx-auto">
