@@ -114,7 +114,7 @@ const RentModal = () => {
         return 'Next';
     }, [step]);
 
-    const secondaryActionLabel = useMemo(() => {
+    const secondaryActionLabel: 'Back' | undefined = useMemo(() => {
         if (step === STEPS.CATEGORY) {
             return undefined;
         }
